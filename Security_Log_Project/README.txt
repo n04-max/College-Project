@@ -1,6 +1,8 @@
 COMP H2702 – Scripting for Cybersecurity
 Project Dataset (Student Version)
 
+Scenario: Security Log Investigation. Analyze supplied firewall and authentication logs and identify meaningful security patterns.
+
 What this contains
 Security_Log_Project
 |_ Logs
@@ -11,7 +13,7 @@ Security_Log_Project
 |_ Summaries
    |_ Authentication_Summary.csv
    |_ Firewall_Summary.csv
-|_ README.md
+|_ README.txt
 
 Needed libraries to run:
 1. pathlib
