@@ -74,7 +74,7 @@ def auth_sum():
             choice_fire = ""
             print("Please choose either 'Y' to save or 'n' to not save")
 
-def fire_log():
+def fire_sum():
     allowed = 0
     blocked = 0
     block_counts = {}
@@ -142,7 +142,7 @@ def main():
         if choice == 1:
             auth_sum()
         elif choice == 2:
-            fire_log()
+            fire_sum()
         elif choice == 3:
             print("Goodbye...")
             break

@@ -1,4 +1,4 @@
-COMP H2702 – Scripting for Cybersecurity
+COMP H2702 – Scripting for Security
 Project Dataset (Student Version)
 
 Scenario: Security Log Investigation. Analyze supplied firewall and authentication logs and identify meaningful security patterns.
