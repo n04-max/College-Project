@@ -103,11 +103,6 @@ def fire_log():
     repeat_blocked = {ip: block_counts.get(ip, 0)
     for ip in suspicious_ips
     if ip in block_counts}
-    print(f"""Total allowed connection: {allowed}
-    Total blocked connections: {blocked}
-    Blocked IP connections: {block_counts}
-    Repeat blocked: {repeat_blocked}
-    Top blocked: {max(block_counts, key = block_counts.get)} was blocked {max(block_counts.values())} times""")
     data = [("Firewall Summay:", datetime.today().strftime("%Y-%m-%d %H:%M:%S")),
             ("Total allowed", allowed),
             ("Total blocked", blocked),
@@ -115,8 +110,8 @@ def fire_log():
             ("Repeat blocked", repeat_blocked),
             ("Top blocked", max(block_counts, key = block_counts.get), max(block_counts.values())),
             ("Leaked IPs", leaks)]
-    for ip, when in leaks.items():
-        print(f"""Leaked IPs: {ip} accepted at {when}""")
+    for i in data:
+        print(i)
     while True:
         choice_fire = input("Do you want to save this summary? (Y/n): ")
         if choice_fire == "Y":
