@@ -57,6 +57,7 @@ def auth_sum():
             ("Failed auth connections:", failed_counts),
             ("Most failed auth by:", max(failed_counts, key = failed_counts.get), max(failed_counts.values())),
             ("Accounts locked:", locked_acc),
+            ("Last logout:", logout_last),
             ("Unknown status:", unknown),]
     for i in data:
         print(i)
