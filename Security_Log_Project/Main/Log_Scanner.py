@@ -138,7 +138,7 @@ def main():
             choice = int(input("Your selection: "))
         except ValueError as ERROR:
             choice = 0
-            print("Please enter a vali number (1, 2, 3 or 4).")
+            print("Please enter a vali number (1, 2, or 3).")
         if choice == 1:
             auth_sum()
         elif choice == 2:
